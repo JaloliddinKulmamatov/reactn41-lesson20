@@ -1,0 +1,151 @@
+@import url(/assets/fonts/static/Manrope-Bold.ttf);
+@import url(/assets/fonts/static/Manrope-ExtraBold.ttf);
+@import url(/assets/fonts/static/Manrope-ExtraLight.ttf);
+@import url(/assets/fonts/static/Manrope-Light.ttf);
+@import url(/assets/fonts/static/Manrope-Medium.ttf);
+@import url(/assets/fonts/static/Manrope-Regular.ttf);
+@import url(/assets/fonts/static/Manrope-SemiBold.ttf);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+button {
+  border: 0px solid;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+#mode-btn {
+  background-color: #FFF;
+}
+
+.dark header, .dark main, .dark footer {
+  background-color: black !important;
+}
+
+.dark * {
+  color: white !important;
+}
+
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__logo img {
+  width: 100%;
+}
+
+.nav__ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin: 30px 120px 0 103px;
+}
+
+.nav__ul a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.nav__button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.nav__button button {
+  padding: 14px 36px;
+  background-color: #F32C6D;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+main {
+  background-color: #F7F6FF;
+}
+
+#home {
+  padding: 158px 0 141px 0;
+}
+
+.home__right h1 {
+  color: var(#333);
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 65px;
+  margin-bottom: 14px;
+}
+
+.home__right p {
+  color: var(#333);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 29px;
+}
+
+.home__right__button button {
+  border-radius: 250px;
+  background: #77B2D3;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.btn__1 {
+  padding: 14px 30px;
+}
+
+.btn__2 {
+  padding: 14px 18px;
+}
+
+.btn__3 {
+  padding: 14px 40px;
+}
+
+.home__left img {
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+@media (max-width: 900px) {
+  .nav__ul {
+    margin: 0px;
+  }
+  .nav__li {
+    display: none;
+  }
+  .nav__logo {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 900px) {
+  #home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
+}
