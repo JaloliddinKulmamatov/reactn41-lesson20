@@ -11,6 +11,13 @@ $text-color:#333;
 $basic__color:#F32C6D;
 $second__color:#77B2D3;
 
+
+%services__card {
+    font-weight: 800;
+    line-height: 48px;
+    color: #F32C6D;
+    margin-bottom: 30px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +44,7 @@ button {
     background-color: #FFF;
 }
 
-.dark header,.dark main, .dark footer {
+.dark header,.dark main, .dark footer, .dark section {
     background-color: black !important;    
 }
 
@@ -151,6 +158,48 @@ main {
 
 // services start
 
+#services {
+    padding: 40px 50px 70px 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 5px #837579;
+}
+
+.services__text h1 {
+    color: $text-color;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.services__card__1{@extend %services__card;}
+.services__card__2{@extend %services__card;}
+.services__card__3{@extend %services__card;}
+.services__card__4{@extend %services__card;}
+
+.services__card__1 h1{ 
+    font-size: 40px;
+}
+
+.services__card__2 h1{
+    font-size: 30px;
+}
+
+.services__card__3 h3{
+    font-size: 50px;
+}
+
+.services__card__4 h1{
+    font-size: 50px;
+}
+
+.services__card p {
+    color:$text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
 // responsive start
 @media (max-width:900px) {
     .nav__ul {
@@ -170,4 +219,19 @@ main {
         display: flex;
         gap: 40px;
     } 
+}
+
+
+@media (min-width:720px) {
+    .services__card {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (min-width:1000px) {
+    .services__card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
